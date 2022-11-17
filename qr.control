@@ -1,0 +1,7 @@
+comment = 'qr:  Created by pgx.  Gerenate QR code linking to a row in a table.'
+default_version = '@CARGO_VERSION@'
+module_pathname = '$libdir/qr'
+relocatable = false
+superuser = false
+schema = qr
+
