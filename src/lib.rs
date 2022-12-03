@@ -10,8 +10,8 @@ fn hello_qr() -> &'static str {
 
 
 #[pg_extern]
-fn generate_qr(base_url: String, table: String, id: String) -> String {
-    let input = format!("{}/{}/{}", base_url, table, id);
+fn generate_qr(base_url: String, obj_name: String, id: String) -> String {
+    let input = format!("{}/{}/{}", base_url, obj_name, id);
     qrcode_generator::to_svg_to_string(input,
                                        QrCodeEcc::Low,
                                        1024,
